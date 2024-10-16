@@ -1,5 +1,5 @@
-function footer() {
+/* function footer() {
     return (
             
     )
-}
+} */
