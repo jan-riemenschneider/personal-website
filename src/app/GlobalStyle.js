@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 import { Poppins } from "next/font/google";
 
 const poppins = Poppins({
-  weight: ["400", "600", "700"],
+  weight: ["400", "600", "700", "200", "300"],
   subsets: ["latin"],
   display: "swap",
 });
@@ -26,6 +26,9 @@ const GlobalStyle = createGlobalStyle`
   :root {
     --primary-color: #3864AB;
     --secondary-color: #FEF6EB;
+  }
+  html {
+    font-size: 10px;
   }
 `;
 

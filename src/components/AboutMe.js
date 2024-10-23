@@ -1,61 +1,102 @@
 "use client";
-import Image from "next/image";
-import Link from "next/link";
 import styled from "styled-components";
 
-const AboutMeSection = styled.section`
+const AboutMeSectionWrapper = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 2%;
+  justify-content: center;
+  height: 666px;
 `;
 
-const AboutMeHeader = styled.section`
+const AboutMeHeaderContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 20px;
-
-  h2 {
-    font-size: 32px;
-  }
-  p {
-    font-size: 15px;
-    margin-top: 20px;
-  }
+  padding-bottom: 10rem;
 `;
-const WhoIAMSection = styled.section`
+
+const AboutMeTitle = styled.h2`
+  font-size: 3.2rem;
+`;
+
+const AboutMeDescription = styled.p`
+  font-size: 1.5rem;
+  margin-top: 2rem;
+`;
+const AboutMeDescriptionSpan = styled.span`
+  font-size: 1.5rem;
+`;
+
+const WhoIAmAndSkillsContainer = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+`;
+
+const WhoIAMSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   h3 {
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: bold;
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
   }
 
   p {
-    height: 263px;
-    width: 400px;
-    font-size: 16 px;
+    width: 420px;
+    font-size: 1.6rem;
   }
 `;
 
-const DivForFlexbox = styled.div`
+const SkillsTitle = styled.h3`
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+`;
+
+const SkillsContainer = styled.div`
   display: flex;
-  gap: 300px;
-  margin-top: 30px;
+  flex-direction: column;
+  justify-content: space-between;
+`;
+const SkillsList = styled.ul`
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+`;
+
+const SkillItem = styled.li`
+  background-color: #d9d9d9;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1.4rem;
+  font-weight: 200;
+  text-align: center;
+  margin: 1rem 1rem 1rem 0rem;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 `;
 
 const AboutMe = () => {
   return (
-    <AboutMeSection>
-      <AboutMeHeader>
-        <h2>ABOUT ME</h2>
-        <p>
+    <AboutMeSectionWrapper>
+      <AboutMeHeaderContainer>
+        <AboutMeTitle>ABOUT ME</AboutMeTitle>
+        <AboutMeDescription>
           Here you can learn more about who I am, what I do, and the skills I've
           developed, mainly
-        </p>
-        <span> focused on programming and technology.</span>
-      </AboutMeHeader>
-      <DivForFlexbox>
+        </AboutMeDescription>
+        <AboutMeDescriptionSpan>
+          focused on programming and technology.
+        </AboutMeDescriptionSpan>
+      </AboutMeHeaderContainer>
+      <WhoIAmAndSkillsContainer>
         <WhoIAMSection>
           <h3>Who I Am</h3>
           <p>
@@ -69,29 +110,34 @@ const AboutMe = () => {
             or contact me if you'd like to collaborate!
           </p>
         </WhoIAMSection>
-
-        <section>
-          <h3>My Current Skillset</h3>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>GIT</li>
-            <li>GitHub</li>
-            <li>Responsive Design</li>
-            <li>Figma</li>
-            <li>Terminal</li>
-          </ul>
-
-          <h3>In Progress</h3>
-          <ul>
-            <li>React</li>
-            <li>Next.js</li>
-            <li>MongoDB</li>
-          </ul>
-        </section>
-      </DivForFlexbox>
-    </AboutMeSection>
+        <SkillsContainer>
+          <div>
+            <SkillsTitle>My Current Skillset</SkillsTitle>
+            <SkillsList>
+              <SkillItem>HTML</SkillItem>
+              <SkillItem>CSS</SkillItem>
+              <SkillItem>JavaScript</SkillItem>
+              <SkillItem>GIT</SkillItem>
+              <SkillItem>GitHub</SkillItem>
+            </SkillsList>
+            <SkillsList>
+              <SkillItem>Responsive Design</SkillItem>
+              <SkillItem>Figma</SkillItem>
+              <SkillItem>Terminal</SkillItem>
+            </SkillsList>
+          </div>
+          <div>
+            <SkillsTitle>In Progress</SkillsTitle>
+            <SkillsList>
+              <SkillItem>React</SkillItem>
+              <SkillItem>Next.js</SkillItem>
+              <SkillItem>MongoDB</SkillItem>
+            </SkillsList>
+          </div>
+        </SkillsContainer>
+      </WhoIAmAndSkillsContainer>
+    </AboutMeSectionWrapper>
   );
 };
+
 export default AboutMe;

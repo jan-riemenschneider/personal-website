@@ -6,9 +6,8 @@ import { FaLinkedin } from "react-icons/fa6";
 import { IoMail } from "react-icons/io5";
 import styled from "styled-components";
 
-
 const StyledSection = styled.section`
-  height: 650px;
+  height: 666px;
   background-color: var(--secondary-color);
   display: flex;
   align-items: center;
