@@ -8,6 +8,11 @@ const poppins = Poppins({
 });
 
 const GlobalStyle = createGlobalStyle`
+:root {
+    --primary-color: #3864AB;
+    --secondary-color: #FEF6EB;
+  }
+
   *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
@@ -19,15 +24,25 @@ const GlobalStyle = createGlobalStyle`
     padding: 0 5px;
     scroll-behavior: smooth;
     max-width: 2000px;
-    line-height: 1.6;
     margin: 0 auto;
+    letter-spacing: 0.5px; 
+    line-height: 1.6;
   }
 
-  :root {
-    --primary-color: #3864AB;
-    --secondary-color: #FEF6EB;
-  }
-  html {
+  h1, h2, h3, h4, h5, h6 {
+  letter-spacing: 1px; 
+}
+
+p {
+  letter-spacing: 0.3px;
+}
+
+a {
+  letter-spacing: 0.2px;
+  text-decoration: none;
+}
+
+html {
     font-size: 10px;
   }
 `;
