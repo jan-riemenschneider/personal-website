@@ -11,7 +11,7 @@ const StyledHeader = styled.header`
   height: 80px;
   position: sticky;
   top: 0;
-  width: 100%;
+  width: 1%;
   z-index: 1000; 
 }
 `;
