@@ -13,7 +13,9 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="de">
-      <head />
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
       <body>
         <StyleSheetManager sheet={sheet.instance}>
           <GlobalStyle />

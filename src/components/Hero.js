@@ -40,6 +40,7 @@ const Hero = () => {
         alt="Jan Riemenschneider"
         width={250}
         height={240}
+        priority
       ></StyledImage>
     </StyledSection>
   );
@@ -58,9 +59,9 @@ const StyledSection = styled.section`
   position: relative;
 
   @media (max-width: 768px) {
-  flex-direction: column;
-  height: auto;
-  padding: 20px;
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
   }
 `;
 
@@ -79,7 +80,10 @@ const StyledLi = styled.li`
   position: absolute;
   left: 10px;
   transform: translateY(-50%);
-  top: 75%;
+  top: 50%;
+  @media (max-width: 768px) {
+    top: 75%;
+  }
 `;
 
 const StyledH2Hey = styled.h2`
