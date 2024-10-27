@@ -8,14 +8,14 @@ import { FaGithub } from "react-icons/fa";
 const Projects = () => {
   const [projects, setProjects] = useState([
     {
-      id: 1,
-      name: "Quiz App / Part of neueFische Bootcamp",
+      id: 3,
+      name: "Theme Creator App / Part of neueFische Bootcamp",
       discription:
-        "Interactive quiz app with dynamic questions and various categories.",
-      languages: "HTML | CSS | JavaScript",
-      LinkGithub: "https://github.com/jan-riemenschneider/Recap-Project-1",
-      LinkWebsite: "https://github.com/jan-riemenschneider/Recap-Project-1",
-      ImageLink: "/images/Bildschirmfoto 2024-10-27 um 19.48.08.png",
+        "Easily create and manage custom color themes. Add, edit, and save colors with automatic contrast checking to ensure readability.",
+      languages: "React",
+      LinkGithub: "https://github.com/jan-riemenschneider/Recap-Project-4",
+      LinkWebsite: "https://recap-project-4-8qdp.vercel.app",
+      ImageLink: "/images/Bildschirmfoto 2024-10-26 um 14.01.30.png",
     },
     {
       id: 2,
@@ -28,14 +28,14 @@ const Projects = () => {
       ImageLink: "/images/Bildschirmfoto 2024-10-25 um 21.28.25.png",
     },
     {
-      id: 3,
-      name: "Theme Creator App / Part of neueFische Bootcamp",
+      id: 1,
+      name: "Quiz App / Part of neueFische Bootcamp",
       discription:
-        "Easily create and manage custom color themes. Add, edit, and save colors with automatic contrast checking to ensure readability.",
-      languages: "React",
-      LinkGithub: "https://github.com/jan-riemenschneider/Recap-Project-4",
-      LinkWebsite: "https://recap-project-4-8qdp.vercel.app",
-      ImageLink: "/images/Bildschirmfoto 2024-10-26 um 14.01.30.png",
+        "Interactive quiz app with dynamic questions and various categories.",
+      languages: "HTML | CSS | JavaScript",
+      LinkGithub: "https://github.com/jan-riemenschneider/Recap-Project-1",
+      LinkWebsite: "https://github.com/jan-riemenschneider/Recap-Project-1",
+      ImageLink: "/images/Bildschirmfoto 2024-10-27 um 19.48.08.png",
     },
   ]);
 

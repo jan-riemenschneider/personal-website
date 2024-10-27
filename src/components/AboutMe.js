@@ -70,7 +70,7 @@ const AboutMeHeaderContainer = styled.div`
   padding-bottom: 5rem;
 
   @media (max-width: 768px) {
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
   }
 `;
 

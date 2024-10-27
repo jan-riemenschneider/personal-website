@@ -56,6 +56,7 @@ const StyledSection = styled.section`
     height: auto;
     gap: 2rem;
     padding: 20px;
+    padding-top: 30px;
   }
 `;
 
