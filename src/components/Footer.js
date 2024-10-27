@@ -10,14 +10,11 @@ function Footer() {
       <FooterContainer>
         <InfoSection>
           <h2>Jan Riemenschneider</h2>
-          <p>
-            A Frontend Developer building websites and web applications that
-            contribute to product success.
-          </p>
+          <p>This site is built with React and Next.js.</p>
         </InfoSection>
         <Copyright>
           <p>© 2024 Jan Riemenschneider. All rights reserved.</p>
-          <Link href="/about">Impressum</Link>
+          <Link href="/impressum">Impressum</Link>
         </Copyright>
         <ConnectSection>
           <p>Let’s Connect</p>

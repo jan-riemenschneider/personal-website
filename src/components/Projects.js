@@ -85,6 +85,7 @@ const ProjectsWrapper = styled.section`
   height: auto;
   background-color: var(--secondary-color);
   padding: 2rem 1rem;
+  padding-bottom: 2rem;
 
   @media (max-width: 768px) {
     padding: 1rem;

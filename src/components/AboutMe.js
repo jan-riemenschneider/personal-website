@@ -107,6 +107,7 @@ const WhoIAmAndSkillsContainer = styled.div`
   justify-content: space-evenly;
   width: 100%;
   gap: 3rem;
+  max-width: 70%;
 
   @media (max-width: 768px) {
     flex-direction: column;
