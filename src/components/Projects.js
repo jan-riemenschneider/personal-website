@@ -9,6 +9,16 @@ const Projects = () => {
   const [projects, setProjects] = useState([
     {
       id: 1,
+      name: "Quiz App",
+      discription:
+        "Interactive quiz app with dynamic questions and various categories.",
+      languages: "HTML | CSS | JavaScript",
+      LinkGithub: "https://github.com/jan-riemenschneider/Recap-Project-1",
+      LinkWebsite: "https://github.com/jan-riemenschneider/Recap-Project-1",
+      ImageLink: "/images/Bildschirmfoto 2024-10-27 um 19.48.08.png",
+    },
+    {
+      id: 2,
       name: "Rick and Morty App",
       discription:
         "A team project that dynamically fetches all characters from the Rick and Morty series via an API. Includes search and filter functionality.",
@@ -18,7 +28,7 @@ const Projects = () => {
       ImageLink: "/images/Bildschirmfoto 2024-10-25 um 21.28.25.png",
     },
     {
-      id: 2,
+      id: 3,
       name: "Theme Creator App",
       discription:
         "Easily create and manage custom color themes. Add, edit, and save colors with automatic contrast checking to ensure readability.",
