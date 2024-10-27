@@ -42,11 +42,13 @@ const Header = () => {
       {HamburgerMenu ? (
         <StyledUlForHamburgerMenu>
           <StyledListForHamburgerMenu>
-            <StyledAForHamburgerMenu href="#home">Home</StyledAForHamburgerMenu>
-            <StyledAForHamburgerMenu href="#about">
+            <StyledAForHamburgerMenu href="#home" onClick={HandleClick}>
+              Home
+            </StyledAForHamburgerMenu>
+            <StyledAForHamburgerMenu href="#about" onClick={HandleClick}>
               About
             </StyledAForHamburgerMenu>
-            <StyledAForHamburgerMenu href="#projects">
+            <StyledAForHamburgerMenu href="#projects" onClick={HandleClick}>
               Projects
             </StyledAForHamburgerMenu>
           </StyledListForHamburgerMenu>
@@ -102,11 +104,14 @@ const StyledA = styled(Link)`
   }
 `;
 
+// Hamburger Menu
+
 const StyledHamburgerMenu = styled(GiHamburgerMenu)`
   display: none;
 
   @media (max-width: 768px) {
     display: block;
+    margin-right: 1rem;
   }
 `;
 
