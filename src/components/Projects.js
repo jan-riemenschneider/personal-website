@@ -76,10 +76,6 @@ const ProjectsWrapper = styled.section`
   width: 100%;
   height: auto;
   background-color: var(--secondary-color);
-
-  @media (max-width: 768px) {
-    padding: 1.5rem; 
-  }
 `;
 
 const ContentWrapper = styled.div`
@@ -91,7 +87,7 @@ const ContentWrapper = styled.div`
 
   @media (max-width: 768px) {
     width: 100%;
-    max-width: 600px; 
+    max-width: 600px;
     padding: 0 1rem;
   }
 `;
@@ -104,15 +100,11 @@ const ProjectsHeaderContainer = styled.div`
 
 const ProjectsHeader = styled.h2`
   font-size: 3.2rem;
-
-  
 `;
 
 const ProjectsHeaderDiscription = styled.p`
   font-size: 1.5rem;
   margin-top: 2rem;
-
-  
 `;
 
 const Product = styled.li`
@@ -124,7 +116,7 @@ const Product = styled.li`
   @media (max-width: 768px) {
     flex-direction: column;
     height: auto;
-    align-items: center; 
+    align-items: center;
     gap: 1rem;
   }
 `;
@@ -144,14 +136,10 @@ const ProductDiscriptionWrapper = styled.div`
 const ProductName = styled.h3`
   font-size: 1.6rem;
   font-weight: 600;
-
-  
 `;
 
 const ProductDiscription = styled.p`
   font-size: 1.4rem;
-
-  
 `;
 
 const StyledGithub = styled(FaGithub)`
@@ -169,6 +157,6 @@ const Styledul = styled.ul`
   gap: 8rem;
 
   @media (max-width: 768px) {
-    gap: 4rem; 
+    gap: 4rem;
   }
 `;
