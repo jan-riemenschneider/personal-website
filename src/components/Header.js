@@ -75,7 +75,7 @@ const StyledHeader = styled.header`
 `;
 
 const StyledH2 = styled.h2`
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 600;
   padding-left: 5%;
 `;
@@ -95,12 +95,12 @@ const StyledList = styled.li`
 const StyledA = styled(Link)`
   text-decoration: none;
   color: #fcfaf8;
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 600;
   transition: font-size 0.3s ease;
 
   &:hover {
-    font-size: 26px;
+    font-size: 2.6rem;
   }
 `;
 
@@ -146,6 +146,6 @@ const StyledListForHamburgerMenu = styled.li`
 const StyledAForHamburgerMenu = styled(Link)`
   text-decoration: none;
   color: #fcfaf8;
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 600;
 `;

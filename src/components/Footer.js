@@ -50,7 +50,7 @@ function Footer() {
 
 const FooterSection = styled.section`
   background-color: #3864ab;
-  padding: 20px 0;
+  padding: 2rem;
   color: #ffffff;
 `;
 
@@ -58,7 +58,7 @@ const FooterContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
@@ -77,7 +77,7 @@ const InfoSection = styled.div`
   }
 
   p {
-    margin: 5px 0 0;
+    margin: 0.5rem 0 0;
     font-size: 1rem;
   }
 `;
@@ -89,7 +89,7 @@ const Copyright = styled.div`
   a {
     color: #e0e0e0;
     text-decoration: none;
-    margin-left: 10px;
+    margin-left: 1rem;
     &:hover {
       text-decoration: underline;
     }
@@ -98,19 +98,19 @@ const Copyright = styled.div`
 
 const ConnectSection = styled.div`
   p {
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
     font-size: 1rem;
   }
 `;
 
 const IconList = styled.div`
   display: flex;
-  gap: 15px;
+  gap: 1.5rem;
 `;
 
 const StyledLinkedIn = styled(FaLinkedin)`
-  width: 25px;
-  height: 25px;
+  width: 2.5rem;
+  height: 2.5rem;
   color: #ffffff;
   transition: transform 0.3s ease;
 
@@ -120,8 +120,8 @@ const StyledLinkedIn = styled(FaLinkedin)`
 `;
 
 const StyledGithub = styled(FaGithub)`
-  width: 25px;
-  height: 25px;
+  width: 2.5rem;
+  height: 2.5rem;
   color: #ffffff;
   transition: transform 0.3s ease;
 
@@ -131,8 +131,8 @@ const StyledGithub = styled(FaGithub)`
 `;
 
 const StyledToMail = styled(IoMail)`
-  width: 25px;
-  height: 25px;
+  width: 2.5rem;
+  height: 2.5rem;
   color: #ffffff;
   transition: transform 0.3s ease;
 

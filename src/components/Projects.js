@@ -56,7 +56,7 @@ const Projects = () => {
                 <ProductDiscription>{project.languages}</ProductDiscription>
                 <Link href={project.LinkGithub} passHref>
                   <StyledGithub
-                    style={{ width: "20px", height: "20px", color: "black" }}
+                    style={{ width: "2rem", height: "2rem", color: "black" }}
                   />
                 </Link>
               </ProductDiscriptionWrapper>

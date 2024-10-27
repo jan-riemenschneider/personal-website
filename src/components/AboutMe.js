@@ -63,7 +63,7 @@ const AboutMeSectionWrapper = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 666px;
+  height: 66.6rem;
 `;
 
 const AboutMeHeaderContainer = styled.div`
@@ -103,7 +103,7 @@ const WhoIAMSection = styled.div`
   }
 
   p {
-    width: 420px;
+    width: 42rem;
     font-size: 1.6rem;
   }
 `;
@@ -127,8 +127,8 @@ const SkillsList = styled.ul`
 
 const SkillItem = styled.li`
   background-color: #d9d9d9;
-  padding: 10px 20px;
-  border-radius: 10px;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
   font-size: 1.4rem;
   font-weight: 200;
   text-align: center;

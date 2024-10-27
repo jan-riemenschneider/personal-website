@@ -22,7 +22,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: ${poppins.style.fontFamily};
     padding: 0 5px;
-    max-width: 2000px;
+    max-width: auto;
     margin: 0 auto;
     letter-spacing: 0.5px; 
     line-height: 1.6;
@@ -45,6 +45,13 @@ html {
     font-size: 10px;
     scroll-behavior: smooth;
   }
+
+@media (max-width: 768px) {
+  html {
+    font-size: 8px; 
+  }
+}
+
 `;
 
 export default GlobalStyle;

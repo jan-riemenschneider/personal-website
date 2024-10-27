@@ -48,19 +48,19 @@ const Hero = () => {
 export default Hero;
 
 const StyledSection = styled.section`
-  height: 666px;
+  height: 66.6rem;
   background-color: var(--secondary-color);
   display: flex;
   align-items: center;
   justify-items: auto;
   justify-content: center;
-  gap: 100px;
+  gap: 10rem;
   position: relative;
 
   @media (max-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
+  flex-direction: column;
+  height: auto;
+  padding: 20px;
   }
 `;
 
@@ -79,7 +79,7 @@ const StyledLi = styled.li`
   position: absolute;
   left: 10px;
   transform: translateY(-50%);
-  top: 50%;
+  top: 75%;
 `;
 
 const StyledH2Hey = styled.h2`
@@ -87,27 +87,16 @@ const StyledH2Hey = styled.h2`
   font-size: 3.9rem;
   font-weight: 700;
   word-wrap: break-word;
-  @media (max-width: 768px) {
-    font-size: 3rem;
-    flex-wrap: wrap;
-  }
 `;
 
 const StyledH2Greeting = styled.h2`
   color: black;
   font-size: 3rem;
   font-weight: 400;
-
-  @media (max-width: 768px) {
-    font-size: 2rem;
-    overflow-wrap: break-word; 
-    word-break: break-word; 
-    width: 100%; 
-  }
 `;
 const StyledGreetingBox = styled.div`
-  width: 560px;
-  height: 216px;
+  width: 56rem;
+  height: 21.6rem;
 `;
 
 const StyledImage = styled(Image)`
