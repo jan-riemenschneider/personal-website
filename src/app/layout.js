@@ -17,12 +17,22 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
       <body>
-        <StyleSheetManager sheet={sheet.instance}>
-          <GlobalStyle />
-          <Header />
-          <main>{children}</main>
-          <Footer />
-        </StyleSheetManager>
+        {/* Render StyleSheetManager nur auf dem Server */}
+        {typeof window === "undefined" ? (
+          <StyleSheetManager sheet={sheet.instance}>
+            <GlobalStyle />
+            <Header />
+            <main>{children}</main>
+            <Footer />
+          </StyleSheetManager>
+        ) : (
+          <>
+            <GlobalStyle />
+            <Header />
+            <main>{children}</main>
+            <Footer />
+          </>
+        )}
       </body>
     </html>
   );
