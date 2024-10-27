@@ -77,7 +77,7 @@ const AboutMeHeaderContainer = styled.div`
   padding-bottom: 10rem;
   @media (max-width: 768px) {
     padding-bottom: 20px;
-    
+    margin-top: 20px;
   }
 `;
 
@@ -98,16 +98,17 @@ const WhoIAmAndSkillsContainer = styled.div`
   justify-content: space-evenly;
   width: 100%;
   @media (max-width: 768px) {
-    flex-wrap: wrap;
-    gap: 20px;
+    flex-direction: column;
+    justify-items: center;
+    gap: 30px;
+    margin-left: 30%;
+    margin-top: 30px;
   }
 `;
 
 const WhoIAMSection = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
-
   h3 {
     font-size: 2rem;
     font-weight: bold;
@@ -130,6 +131,7 @@ const SkillsContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 20px;
 `;
 const SkillsList = styled.ul`
   display: flex;

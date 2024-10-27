@@ -76,6 +76,7 @@ const ProjectsWrapper = styled.section`
   width: 100%;
   height: auto;
   background-color: var(--secondary-color);
+  padding: 10px;
 `;
 
 const ContentWrapper = styled.div`
@@ -96,6 +97,7 @@ const ProjectsHeaderContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 5rem;
+  text-align: center;
 `;
 
 const ProjectsHeader = styled.h2`

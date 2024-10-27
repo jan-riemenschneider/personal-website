@@ -101,6 +101,11 @@ const StyledH2Greeting = styled.h2`
 const StyledGreetingBox = styled.div`
   width: 56rem;
   height: 21.6rem;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
 `;
 
 const StyledImage = styled(Image)`
