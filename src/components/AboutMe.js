@@ -28,28 +28,20 @@ const AboutMe = () => {
           </p>
         </WhoIAMSection>
         <SkillsContainer>
-          <div>
-            <SkillsTitle>My Skillset</SkillsTitle>
-            <SkillsList>
-              <SkillItem>HTML</SkillItem>
-              <SkillItem>CSS</SkillItem>
-              <SkillItem>JavaScript</SkillItem>
-            </SkillsList>
-            <SkillsList>
-              <SkillItem>React</SkillItem>
-              <SkillItem>Next.js</SkillItem>
-              <SkillItem>MongoDB</SkillItem>
-            </SkillsList>
-            <SkillsList>
-              <SkillItem>GIT</SkillItem>
-              <SkillItem>GitHub</SkillItem>
-              <SkillItem>Terminal</SkillItem>
-            </SkillsList>
-            <SkillsList>
-              <SkillItem>Responsive Design</SkillItem>
-              <SkillItem>Figma</SkillItem>
-            </SkillsList>
-          </div>
+          <SkillsTitle>My Skillset</SkillsTitle>
+          <SkillsList>
+            <SkillItem>HTML</SkillItem>
+            <SkillItem>CSS</SkillItem>
+            <SkillItem>JavaScript</SkillItem>
+            <SkillItem>React</SkillItem>
+            <SkillItem>Next.js</SkillItem>
+            <SkillItem>MongoDB</SkillItem>
+            <SkillItem>GIT</SkillItem>
+            <SkillItem>GitHub</SkillItem>
+            <SkillItem>Terminal</SkillItem>
+            <SkillItem>Responsive Design</SkillItem>
+            <SkillItem>Figma</SkillItem>
+          </SkillsList>
         </SkillsContainer>
       </WhoIAmAndSkillsContainer>
     </AboutMeSectionWrapper>
@@ -63,10 +55,11 @@ const AboutMeSectionWrapper = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 66.6rem;
+  padding: 4rem 2rem;
+  height: 100%;
+
   @media (max-width: 768px) {
-    height: auto;
-    padding: 10px;
+    padding: 2rem;
   }
 `;
 
@@ -74,69 +67,106 @@ const AboutMeHeaderContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 10rem;
+  padding-bottom: 5rem;
+
   @media (max-width: 768px) {
-    padding-bottom: 20px;
-    margin-top: 20px;
+    padding-bottom: 2rem;
   }
 `;
 
 const AboutMeTitle = styled.h2`
   font-size: 3.2rem;
+
+  @media (max-width: 768px) {
+    font-size: 2.8rem;
+  }
 `;
 
 const AboutMeDescription = styled.p`
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   margin-top: 2rem;
+  text-align: center;
+
+  @media (max-width: 768px) {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+  }
 `;
+
 const AboutMeDescriptionSpan = styled.span`
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  text-align: center;
+
+  @media (max-width: 768px) {
+    font-size: 1.4rem;
+  }
 `;
 
 const WhoIAmAndSkillsContainer = styled.div`
   display: flex;
   justify-content: space-evenly;
   width: 100%;
+  gap: 3rem;
+
   @media (max-width: 768px) {
     flex-direction: column;
-    justify-items: center;
-    gap: 30px;
-    margin-left: 30%;
-    margin-top: 30px;
+    align-items: center;
+    gap: 2rem;
   }
 `;
 
 const WhoIAMSection = styled.div`
   display: flex;
   flex-direction: column;
+  max-width: 45rem;
+
   h3 {
     font-size: 2rem;
     font-weight: bold;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
+
+    @media (max-width: 768px) {
+      font-size: 1.8rem;
+      text-align: center;
+    }
   }
 
   p {
-    width: 42rem;
     font-size: 1.6rem;
+    line-height: 1.6;
+    text-align: justify;
+
+    @media (max-width: 768px) {
+      font-size: 1.4rem;
+      text-align: center;
+    }
   }
+`;
+
+const SkillsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const SkillsTitle = styled.h3`
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 2rem;
+
+  @media (max-width: 768px) {
+    font-size: 1.8rem;
+    text-align: center;
+  }
 `;
 
-const SkillsContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-bottom: 20px;
-`;
 const SkillsList = styled.ul`
   display: flex;
   flex-wrap: wrap;
+  gap: 1rem;
   list-style: none;
+  justify-content: center;
+  padding: 0;
 `;
 
 const SkillItem = styled.li`
@@ -146,10 +176,14 @@ const SkillItem = styled.li`
   font-size: 1.4rem;
   font-weight: 200;
   text-align: center;
-  margin: 1rem 1rem 1rem 0rem;
   transition: transform 0.3s ease;
 
   &:hover {
     transform: scale(1.1);
+  }
+
+  @media (max-width: 768px) {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
   }
 `;

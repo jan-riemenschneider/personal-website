@@ -21,25 +21,10 @@ const Header = () => {
           <StyledA href="#projects">Projects</StyledA>
         </StyledList>
       </StyledUl>
-      <StyledHamburgerButton
-        onClick={HandleClick}
-        style={{
-          border: "none",
-          background: "none",
-          padding: 0,
-          cursor: "pointer",
-        }}
-      >
-        <StyledHamburgerMenu
-          style={{
-            width: "50px",
-            height: "50px",
-            color: "white",
-            border: "none",
-          }}
-        />
+      <StyledHamburgerButton onClick={HandleClick}>
+        <StyledHamburgerMenu />
       </StyledHamburgerButton>
-      {HamburgerMenu ? (
+      {HamburgerMenu && (
         <StyledUlForHamburgerMenu>
           <StyledListForHamburgerMenu>
             <StyledAForHamburgerMenu href="#home" onClick={HandleClick}>
@@ -53,8 +38,6 @@ const Header = () => {
             </StyledAForHamburgerMenu>
           </StyledListForHamburgerMenu>
         </StyledUlForHamburgerMenu>
-      ) : (
-        false
       )}
     </StyledHeader>
   );
@@ -109,6 +92,9 @@ const StyledHamburgerMenu = styled(GiHamburgerMenu)`
 
   @media (max-width: 768px) {
     display: block;
+    width: 50px;
+    height: 50px;
+    color: white;
     margin-right: 1rem;
   }
 `;
@@ -118,6 +104,7 @@ const StyledHamburgerButton = styled.button`
   background: none;
   border: none;
   cursor: pointer;
+  padding: 0;
 
   @media (max-width: 768px) {
     display: block;
@@ -129,16 +116,25 @@ const StyledUlForHamburgerMenu = styled.ul`
   top: 60px;
   right: 0;
   background-color: var(--primary-color);
-  padding: 10px;
+  padding: 20px;
   list-style: none;
+  display: flex;
   flex-direction: column;
   gap: 10px;
   border-radius: 0 0 10px 10px;
+  width: 100%;
+  align-items: center;
+
+  @media (min-width: 769px) {
+    display: none;
+  }
 `;
 
 const StyledListForHamburgerMenu = styled.li`
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 10px;
 `;
 
 const StyledAForHamburgerMenu = styled(Link)`

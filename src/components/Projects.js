@@ -43,7 +43,7 @@ const Projects = () => {
           {projects.map((project) => (
             <Product key={project.id}>
               <Link href={project.LinkWebsite} passHref>
-                <Image
+                <StyledImage
                   src={project.ImageLink}
                   width={258}
                   height={160}
@@ -55,9 +55,7 @@ const Projects = () => {
                 <ProductDiscription>{project.discription}</ProductDiscription>
                 <ProductDiscription>{project.languages}</ProductDiscription>
                 <Link href={project.LinkGithub} passHref>
-                  <StyledGithub
-                    style={{ width: "2rem", height: "20px", color: "black" }}
-                  />
+                  <StyledGithub />
                 </Link>
               </ProductDiscriptionWrapper>
             </Product>
@@ -76,19 +74,23 @@ const ProjectsWrapper = styled.section`
   width: 100%;
   height: auto;
   background-color: var(--secondary-color);
-  padding: 10px;
+  padding: 2rem 1rem;
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
 `;
 
 const ContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
   height: auto;
-  width: 72.2rem;
+  width: 100%;
+  max-width: 72.2rem;
   margin-top: 1rem;
 
   @media (max-width: 768px) {
     width: 100%;
-    max-width: 600px;
     padding: 0 1rem;
   }
 `;
@@ -102,24 +104,41 @@ const ProjectsHeaderContainer = styled.div`
 
 const ProjectsHeader = styled.h2`
   font-size: 3.2rem;
+
+  @media (max-width: 768px) {
+    font-size: 2.4rem;
+  }
 `;
 
 const ProjectsHeaderDiscription = styled.p`
   font-size: 1.5rem;
   margin-top: 2rem;
+
+  @media (max-width: 768px) {
+    font-size: 1.3rem;
+  }
 `;
 
 const Product = styled.li`
   display: flex;
   margin-top: 3rem;
-  height: 15rem;
   gap: 3rem;
+  align-items: center;
 
   @media (max-width: 768px) {
     flex-direction: column;
-    height: auto;
-    align-items: center;
     gap: 1rem;
+  }
+`;
+
+const StyledImage = styled(Image)`
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
   }
 `;
 
@@ -131,21 +150,32 @@ const ProductDiscriptionWrapper = styled.div`
   @media (max-width: 768px) {
     align-items: center;
     text-align: center;
-    gap: 0.5rem;
   }
 `;
 
 const ProductName = styled.h3`
   font-size: 1.6rem;
   font-weight: 600;
+
+  @media (max-width: 768px) {
+    font-size: 1.4rem;
+  }
 `;
 
 const ProductDiscription = styled.p`
   font-size: 1.4rem;
+
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+  }
 `;
 
 const StyledGithub = styled(FaGithub)`
+  width: 2rem;
+  height: 2rem;
+  color: black;
   transition: transform 0.3s ease;
+
   &:hover {
     transform: rotate(20deg);
   }
@@ -154,9 +184,9 @@ const StyledGithub = styled(FaGithub)`
 const Styledul = styled.ul`
   display: flex;
   flex-direction: column;
-  margin-bottom: 10rem;
   margin-top: 5%;
   gap: 8rem;
+  width: 100%;
 
   @media (max-width: 768px) {
     gap: 4rem;
