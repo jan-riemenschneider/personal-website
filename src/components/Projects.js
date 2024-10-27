@@ -9,7 +9,7 @@ const Projects = () => {
   const [projects, setProjects] = useState([
     {
       id: 1,
-      name: "Quiz App",
+      name: "Quiz App / Part of neueFische Bootcamp",
       discription:
         "Interactive quiz app with dynamic questions and various categories.",
       languages: "HTML | CSS | JavaScript",
@@ -19,7 +19,7 @@ const Projects = () => {
     },
     {
       id: 2,
-      name: "Rick and Morty App",
+      name: "Rick and Morty App / Part of neueFische Bootcamp",
       discription:
         "A team project that dynamically fetches all characters from the Rick and Morty series via an API. Includes search and filter functionality.",
       languages: "HTML | CSS | JavaScript",
@@ -29,7 +29,7 @@ const Projects = () => {
     },
     {
       id: 3,
-      name: "Theme Creator App",
+      name: "Theme Creator App / Part of neueFische Bootcamp",
       discription:
         "Easily create and manage custom color themes. Add, edit, and save colors with automatic contrast checking to ensure readability.",
       languages: "React",
