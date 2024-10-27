@@ -22,7 +22,6 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: ${poppins.style.fontFamily};
     padding: 0 5px;
-    scroll-behavior: smooth;
     max-width: 2000px;
     margin: 0 auto;
     letter-spacing: 0.5px; 
@@ -44,6 +43,7 @@ a {
 
 html {
     font-size: 10px;
+    scroll-behavior: smooth;
   }
 `;
 

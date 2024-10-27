@@ -1,6 +1,63 @@
 "use client";
 import styled from "styled-components";
 
+const AboutMe = () => {
+  return (
+    <AboutMeSectionWrapper id="about">
+      <AboutMeHeaderContainer>
+        <AboutMeTitle>ABOUT ME</AboutMeTitle>
+        <AboutMeDescription>
+          Learn more about me, what I do, and the skills I’ve built.
+        </AboutMeDescription>
+        <AboutMeDescriptionSpan>
+          focused on programming and technology.
+        </AboutMeDescriptionSpan>
+      </AboutMeHeaderContainer>
+      <WhoIAmAndSkillsContainer>
+        <WhoIAMSection>
+          <h3>Who I Am</h3>
+          <p>
+            I'm Jan, a Web Developer in training with 9 years of experience in
+            sales, where I developed strong communication skills and a
+            customer-focused approach. Through a hands-on bootcamp, I built my
+            technical and analytical skills and learned to create user-friendly,
+            functional, and visually engaging web applications. I focus on
+            writing clean code and delivering smooth user experiences. As I
+            finish my training, I’m excited to join a team where I can
+            contribute my skills, learn more, and grow as a developer.
+          </p>
+        </WhoIAMSection>
+        <SkillsContainer>
+          <div>
+            <SkillsTitle>My Skillset</SkillsTitle>
+            <SkillsList>
+              <SkillItem>HTML</SkillItem>
+              <SkillItem>CSS</SkillItem>
+              <SkillItem>JavaScript</SkillItem>
+            </SkillsList>
+            <SkillsList>
+              <SkillItem>React</SkillItem>
+              <SkillItem>Next.js</SkillItem>
+              <SkillItem>MongoDB</SkillItem>
+            </SkillsList>
+            <SkillsList>
+              <SkillItem>GIT</SkillItem>
+              <SkillItem>GitHub</SkillItem>
+              <SkillItem>Terminal</SkillItem>
+            </SkillsList>
+            <SkillsList>
+              <SkillItem>Responsive Design</SkillItem>
+              <SkillItem>Figma</SkillItem>
+            </SkillsList>
+          </div>
+        </SkillsContainer>
+      </WhoIAmAndSkillsContainer>
+    </AboutMeSectionWrapper>
+  );
+};
+
+export default AboutMe;
+
 const AboutMeSectionWrapper = styled.section`
   display: flex;
   flex-direction: column;
@@ -82,62 +139,3 @@ const SkillItem = styled.li`
     transform: scale(1.1);
   }
 `;
-
-const AboutMe = () => {
-  return (
-    <AboutMeSectionWrapper>
-      <AboutMeHeaderContainer>
-        <AboutMeTitle>ABOUT ME</AboutMeTitle>
-        <AboutMeDescription>
-          Here you can learn more about who I am, what I do, and the skills I've
-          developed, mainly
-        </AboutMeDescription>
-        <AboutMeDescriptionSpan>
-          focused on programming and technology.
-        </AboutMeDescriptionSpan>
-      </AboutMeHeaderContainer>
-      <WhoIAmAndSkillsContainer>
-        <WhoIAMSection>
-          <h3>Who I Am</h3>
-          <p>
-            I'm Jan, a passionate Junior Web Developer in training. With a
-            strong interest in building user-friendly, functional, and creative
-            web applications, I’m constantly working on improving my skills. I
-            focus on delivering clean code and smooth user experiences. As I
-            complete my bootcamp, I am actively looking for opportunities to
-            contribute to real-world projects where I can apply my technical
-            skills and grow as a developer. Feel free to check out my projects
-            or contact me if you'd like to collaborate!
-          </p>
-        </WhoIAMSection>
-        <SkillsContainer>
-          <div>
-            <SkillsTitle>My Current Skillset</SkillsTitle>
-            <SkillsList>
-              <SkillItem>HTML</SkillItem>
-              <SkillItem>CSS</SkillItem>
-              <SkillItem>JavaScript</SkillItem>
-              <SkillItem>GIT</SkillItem>
-              <SkillItem>GitHub</SkillItem>
-            </SkillsList>
-            <SkillsList>
-              <SkillItem>Responsive Design</SkillItem>
-              <SkillItem>Figma</SkillItem>
-              <SkillItem>Terminal</SkillItem>
-            </SkillsList>
-          </div>
-          <div>
-            <SkillsTitle>In Progress</SkillsTitle>
-            <SkillsList>
-              <SkillItem>React</SkillItem>
-              <SkillItem>Next.js</SkillItem>
-              <SkillItem>MongoDB</SkillItem>
-            </SkillsList>
-          </div>
-        </SkillsContainer>
-      </WhoIAmAndSkillsContainer>
-    </AboutMeSectionWrapper>
-  );
-};
-
-export default AboutMe;

@@ -30,13 +30,13 @@ const Projects = () => {
   ]);
 
   return (
-    <ProjectsWrapper>
+    <ProjectsWrapper id="projects">
       <ContentWrapper>
         <ProjectsHeaderContainer>
           <ProjectsHeader>PROJECTS</ProjectsHeader>
           <ProjectsHeaderDiscription>
-            Here you can learn more about who I am, what I do, and the skills
-            I’ve developed, mainly focused on programming and technology.
+            Explore some example projects that showcase my skills in programming
+            and technology.
           </ProjectsHeaderDiscription>
         </ProjectsHeaderContainer>
         <Styledul>

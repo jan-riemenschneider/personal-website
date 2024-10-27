@@ -6,6 +6,47 @@ import { FaLinkedin } from "react-icons/fa6";
 import { IoMail } from "react-icons/io5";
 import styled from "styled-components";
 
+const Hero = () => {
+  return (
+    <StyledSection id="hero">
+      <ul>
+        <StyledLi>
+          <Link href="https://linkedin.com/in/jan-riemenschneider">
+            <StyledLinkedIn
+              style={{ width: "25px", height: "25px", color: "black" }}
+            />
+          </Link>
+          <Link href="https://github.com/jan-riemenschneider">
+            <StyledGithub
+              style={{ width: "25px", height: "25px", color: "black" }}
+            />
+          </Link>
+          <Link href="mailto:jan-riemenschneider@outlook.de">
+            <StyledToMail
+              style={{ width: "25px", height: "25px", color: "black" }}
+            />
+          </Link>
+        </StyledLi>
+      </ul>
+      <StyledGreetingBox>
+        <StyledH2Hey>HEY, I'M JAN!</StyledH2Hey>
+        <StyledH2Greeting>
+          I'm a web developer in training – passionate about building functional
+          and creative digital experiences!
+        </StyledH2Greeting>
+      </StyledGreetingBox>
+      <StyledImage
+        src="/images/4653eebe (1)-removebg-preview (1).jpg"
+        alt="Jan Riemenschneider"
+        width={250}
+        height={240}
+      ></StyledImage>
+    </StyledSection>
+  );
+};
+
+export default Hero;
+
 const StyledSection = styled.section`
   height: 666px;
   background-color: var(--secondary-color);
@@ -77,44 +118,3 @@ const StyledToMail = styled(IoMail)`
     transform: rotate(20deg);
   }
 `;
-
-const Hero = () => {
-  return (
-    <StyledSection>
-      <ul>
-        <StyledLi>
-          <Link href="https://linkedin.com/in/jan-riemenschneider">
-            <StyledLinkedIn
-              style={{ width: "25px", height: "25px", color: "black" }}
-            />
-          </Link>
-          <Link href="https://github.com/jan-riemenschneider">
-            <StyledGithub
-              style={{ width: "25px", height: "25px", color: "black" }}
-            />
-          </Link>
-          <Link href="mailto:jan-riemenschneider@outlook.de">
-            <StyledToMail
-              style={{ width: "25px", height: "25px", color: "black" }}
-            />
-          </Link>
-        </StyledLi>
-      </ul>
-      <StyledGreetingBox>
-        <StyledH2Hey>HEY, I'M JAN!</StyledH2Hey>
-        <StyledH2Greeting>
-          I'm a web developer in training – I love creating both creative and
-          functiond!
-        </StyledH2Greeting>
-      </StyledGreetingBox>
-      <StyledImage
-        src="/images/4653eebe (1)-removebg-preview (1).jpg"
-        alt="Jan Riemenschneider"
-        width={230}
-        height={220}
-      ></StyledImage>
-    </StyledSection>
-  );
-};
-
-export default Hero;
