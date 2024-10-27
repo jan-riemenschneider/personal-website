@@ -56,7 +56,7 @@ const Projects = () => {
                 <ProductDiscription>{project.languages}</ProductDiscription>
                 <Link href={project.LinkGithub} passHref>
                   <StyledGithub
-                    style={{ width: "2rem", height: "2rem", color: "black" }}
+                    style={{ width: "2rem", height: "20px", color: "black" }}
                   />
                 </Link>
               </ProductDiscriptionWrapper>
@@ -76,6 +76,10 @@ const ProjectsWrapper = styled.section`
   width: 100%;
   height: auto;
   background-color: var(--secondary-color);
+
+  @media (max-width: 768px) {
+    padding: 1.5rem; 
+  }
 `;
 
 const ContentWrapper = styled.div`
@@ -84,41 +88,70 @@ const ContentWrapper = styled.div`
   height: auto;
   width: 72.2rem;
   margin-top: 1rem;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    max-width: 600px; 
+    padding: 0 1rem;
+  }
 `;
+
 const ProjectsHeaderContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 5rem;
 `;
+
 const ProjectsHeader = styled.h2`
   font-size: 3.2rem;
+
+  
 `;
+
 const ProjectsHeaderDiscription = styled.p`
   font-size: 1.5rem;
   margin-top: 2rem;
+
+  
 `;
 
-const Product = styled.ul`
+const Product = styled.li`
   display: flex;
   margin-top: 3rem;
   height: 15rem;
-
   gap: 3rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    height: auto;
+    align-items: center; 
+    gap: 1rem;
+  }
 `;
 
 const ProductDiscriptionWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
+
+  @media (max-width: 768px) {
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+  }
 `;
 
 const ProductName = styled.h3`
   font-size: 1.6rem;
   font-weight: 600;
+
+  
 `;
 
 const ProductDiscription = styled.p`
   font-size: 1.4rem;
+
+  
 `;
 
 const StyledGithub = styled(FaGithub)`
@@ -134,4 +167,8 @@ const Styledul = styled.ul`
   margin-bottom: 10rem;
   margin-top: 5%;
   gap: 8rem;
+
+  @media (max-width: 768px) {
+    gap: 4rem; 
+  }
 `;

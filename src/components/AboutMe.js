@@ -64,6 +64,10 @@ const AboutMeSectionWrapper = styled.section`
   align-items: center;
   justify-content: center;
   height: 66.6rem;
+  @media (max-width: 768px) {
+    height: auto;
+    padding: 10px;
+  }
 `;
 
 const AboutMeHeaderContainer = styled.div`
@@ -71,6 +75,10 @@ const AboutMeHeaderContainer = styled.div`
   flex-direction: column;
   align-items: center;
   padding-bottom: 10rem;
+  @media (max-width: 768px) {
+    padding-bottom: 20px;
+    
+  }
 `;
 
 const AboutMeTitle = styled.h2`
@@ -89,6 +97,10 @@ const WhoIAmAndSkillsContainer = styled.div`
   display: flex;
   justify-content: space-evenly;
   width: 100%;
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 `;
 
 const WhoIAMSection = styled.div`

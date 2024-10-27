@@ -104,8 +104,6 @@ const StyledA = styled(Link)`
   }
 `;
 
-// Hamburger Menu
-
 const StyledHamburgerMenu = styled(GiHamburgerMenu)`
   display: none;
 
