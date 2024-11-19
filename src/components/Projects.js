@@ -8,7 +8,17 @@ import { FaGithub } from "react-icons/fa";
 const Projects = () => {
   const [projects, setProjects] = useState([
     {
-      id: 3,
+      id: 1,
+      name: "Digital Plant Care App / Capstone Team Project of neueFische Bootcamp",
+      discription:
+        "Add new plants, receive personalized care tips, and manage detailed information such as watering schedules, light requirements, and growth advice.",
+      Framework: "Next.js",
+      LinkGithub: "https://github.com/StephMode/plant-pal",
+      LinkWebsite: "plant-pal-sigma.vercel.app",
+      ImageLink: "/images/Bildschirmfoto 2024-11-19 um 20.24.59.png",
+    },
+    {
+      id: 2,
       name: "Theme Creator App / Part of neueFische Bootcamp",
       discription:
         "Easily create and manage custom color themes. Add, edit, and save colors with automatic contrast checking to ensure readability.",
@@ -18,7 +28,7 @@ const Projects = () => {
       ImageLink: "/images/Bildschirmfoto 2024-10-26 um 14.01.30.png",
     },
     {
-      id: 2,
+      id: 3,
       name: "Rick and Morty App / Part of neueFische Bootcamp",
       discription:
         "A team project that dynamically fetches all characters from the Rick and Morty series via an API. Includes search and filter functionality.",
@@ -26,16 +36,6 @@ const Projects = () => {
       LinkGithub: "https://github.com/jan-riemenschneider/Recap-Project-3",
       LinkWebsite: "https://recap-project-3-alpha.vercel.app/",
       ImageLink: "/images/Bildschirmfoto 2024-10-25 um 21.28.25.png",
-    },
-    {
-      id: 1,
-      name: "Quiz App / Part of neueFische Bootcamp",
-      discription:
-        "Interactive quiz app with dynamic questions and various categories.",
-      languages: "HTML | CSS | JavaScript",
-      LinkGithub: "https://github.com/jan-riemenschneider/Recap-Project-1",
-      LinkWebsite: "https://github.com/jan-riemenschneider/Recap-Project-1",
-      ImageLink: "/images/Bildschirmfoto 2024-10-27 um 19.48.08.png",
     },
   ]);
 
