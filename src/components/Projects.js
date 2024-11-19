@@ -12,10 +12,10 @@ const Projects = () => {
       name: "Digital Plant Care App / Capstone Team Project of neueFische Bootcamp",
       discription:
         "Add new plants, receive personalized care tips, and manage detailed information such as watering schedules, light requirements, and growth advice.",
-      Framework: "Next.js",
+      languages: "Next.js",
       LinkGithub: "https://github.com/StephMode/plant-pal",
-      LinkWebsite: "plant-pal-sigma.vercel.app",
-      ImageLink: "/images/Bildschirmfoto 2024-11-19 um 20.24.59.png",
+      LinkWebsite: "https://plant-pal-sigma.vercel.app",
+      ImageLink: "/images/Bildschirmfoto 2024-11-19 um 20.59.21.png",
     },
     {
       id: 2,
