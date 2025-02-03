@@ -24,8 +24,8 @@ const Hero = () => {
       <StyledGreetingBox>
         <StyledH2Hey>HEY, I'M JAN!</StyledH2Hey>
         <StyledH2Greeting>
-          I'm a web developer in training – passionate about building functional
-          and creative digital experiences!
+          I'm a web developer – passionate about building functional and
+          creative digital experiences!
         </StyledH2Greeting>
       </StyledGreetingBox>
       <StyledImage

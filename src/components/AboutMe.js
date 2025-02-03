@@ -17,14 +17,15 @@ const AboutMe = () => {
         <WhoIAMSection>
           <h3>Who I Am</h3>
           <p>
-            I'm Jan, a Web Developer in training with 9 years of experience in
-            sales, where I developed strong communication skills and a
-            customer-focused approach. Through a hands-on bootcamp, I built my
-            technical and analytical skills and learned to create user-friendly,
-            functional, and visually engaging web applications. I focus on
-            writing clean code and delivering smooth user experiences. As I
-            finish my training, I’m excited to join a team where I can
-            contribute my skills, learn more, and grow as a developer.
+            I’m Jan, a Web Developer with a background in sales, where I
+            developed strong communication skills and a customer-focused
+            approach. After completing an intensive hands-on bootcamp, I built a
+            solid foundation in web development, focusing on clean code, smooth
+            user experiences, and functional, visually engaging applications.
+            Now, having finished my training, I’m actively working on real-world
+            projects to deepen my expertise and apply my skills in professional
+            environments. I’m excited to collaborate with a team where I can
+            contribute, learn, and grow as a developer.
           </p>
         </WhoIAMSection>
         <SkillsContainer>
@@ -33,6 +34,8 @@ const AboutMe = () => {
             <SkillItem>HTML</SkillItem>
             <SkillItem>CSS</SkillItem>
             <SkillItem>JavaScript</SkillItem>
+            <SkillItem>TypeScript</SkillItem>
+            <SkillItem>React Native</SkillItem>
             <SkillItem>React</SkillItem>
             <SkillItem>Next.js</SkillItem>
             <SkillItem>MongoDB</SkillItem>
